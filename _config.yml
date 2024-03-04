@@ -20,9 +20,9 @@
 
 title: Paddle 15143
 description: >- # this means to ignore newlines until "baseurl:"
-  Paddle 15143 is a community organization that promotes the sport of platform tennis (aka: paddle)
-  in the Sewickley area. We are committed to providing a safe, fun, and supportive environment for all of our members,
-  regardless of their ability or style.
+  Paddle 15143 is a community organization that promotes the sport of platform tennis
+  in the Sewickley area. We are committed to providing a safe, fun, and supportive environment
+  for all of our members, regardless of their ability or style.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
