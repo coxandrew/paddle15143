@@ -4,7 +4,7 @@ title: Teams
 permalink: /teams/
 ---
 
-{% assign teams = "Stallard,Coates,Cox,Dave,Duncan,Hay" | split: "," %}
+{% assign teams = "Stallard,Coates,Cox,Poluszejko,Duncan,Hay" | split: "," %}
 
 {% for team in teams %}
   <h2>Team {{ team }}</h2>
@@ -16,7 +16,7 @@ permalink: /teams/
       </tr>
     </thead>
     <tbody>
-      {% assign players = site.data.sewickley-spring-league | where: "Spring Team", team | sort: "Name" %}
+      {% assign players = site.data.team-rosters | where: "Spring Team", team | sort: "Name" %}
       {% for player in players %}
         <tr>
           <td>{{ player.Name }}</td>
