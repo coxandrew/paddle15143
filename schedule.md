@@ -9,7 +9,7 @@ permalink: /schedule/
 | Matchup | Location |
 |---------|----------|
 | Cox Slashers @ Beaver Street Bullies | Allegheny Country Club      |
-| Team Sallard @ Ball Busters | Edgeworth Club       |
+| Team Stallard @ Ball Busters | Edgeworth Club       |
 | Team Coates @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, April 11th
@@ -18,13 +18,13 @@ permalink: /schedule/
 |---------|----------|
 | Ball Busters @ Team Coates | Allegheny Country Club      |
 | Duncan's Donuts @ Cox Slashers | Edgeworth Club       |
-| Beaver Street Bullies @ Team Sallard | Sewickley YMCA     |
+| Beaver Street Bullies @ Team Stallard | Sewickley YMCA     |
 
 ## Thu, April 18th
 
 | Matchup | Location |
 |---------|----------|
-| Team Sallard @ Beaver Street Bullies | Allegheny Country Club      |
+| Team Stallard @ Beaver Street Bullies | Allegheny Country Club      |
 | Team Coates @ Ball Busters | Edgeworth Club       |
 | Cox Slashers @ Duncan's Donuts | Sewickley YMCA     |
 
@@ -34,14 +34,14 @@ permalink: /schedule/
 |---------|----------|
 | Duncan's Donuts @ Team Coates | Allegheny Country Club      |
 | Beaver Street Bullies @ Cox Slashers | Edgeworth Club       |
-| Ball Busters @ Team Sallard | Sewickley YMCA     |
+| Ball Busters @ Team Stallard | Sewickley YMCA     |
 
 ## Thu, May 2nd
 
 | Matchup | Location |
 |---------|----------|
 | Ball Busters @ Beaver Street Bullies | Allegheny Country Club      |
-| Team Sallard @ Cox Slashers | Edgeworth Club       |
+| Team Stallard @ Cox Slashers | Edgeworth Club       |
 | Team Coates @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, May 9th
@@ -50,7 +50,7 @@ permalink: /schedule/
 |---------|----------|
 | Cox Slashers @ Team Coates | Allegheny Country Club      |
 | Duncan's Donuts @ Ball Busters | Edgeworth Club       |
-| Beaver Street Bullies @ Team Sallard | Sewickley YMCA     |
+| Beaver Street Bullies @ Team Stallard | Sewickley YMCA     |
 
 ## Thu, May 16th
 
@@ -58,4 +58,4 @@ permalink: /schedule/
 |---------|----------|
 | Duncan's Donuts @ Beaver Street Bullies | Allegheny Country Club      |
 | Team Coates @ Cox Slashers | Edgeworth Club       |
-| Ball Busters @ Team Sallard | Sewickley YMCA     |
+| Ball Busters @ Team Stallard | Sewickley YMCA     |
