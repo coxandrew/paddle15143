@@ -13,6 +13,8 @@ permalink: /teams/
         Cox Slashers
       {% when 'Duncan' %}
         Duncan's Donuts
+      {% when 'Hay' %}
+        Ball Busters
       {% when 'Poluszejko' %}
         Beaver Street Bullies
       {% else %}
