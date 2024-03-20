@@ -32,8 +32,8 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - teams.md
   - schedule.md
+  - teams.md
   - about.md
 
 # Exclude from processing.

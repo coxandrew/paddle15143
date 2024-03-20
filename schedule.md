@@ -4,7 +4,7 @@ title: Schedule
 permalink: /schedule/
 ---
 
-## Week 1
+## Thu, April 4th
 
 | Matchup | Location |
 |---------|----------|
@@ -12,7 +12,7 @@ permalink: /schedule/
 | Team Sallard @ Ball Busters | Edgeworth Club       |
 | Team Coates @ Duncan's Donuts | Sewickley YMCA     |
 
-## Week 2
+## Thu, April 11th
 
 | Matchup | Location |
 |---------|----------|
@@ -20,7 +20,7 @@ permalink: /schedule/
 | Duncan's Donuts @ Cox Slashers | Edgeworth Club       |
 | Beaver Street Bullies @ Team Sallard | Sewickley YMCA     |
 
-## Week 3
+## Thu, April 18th
 
 | Matchup | Location |
 |---------|----------|
@@ -28,7 +28,7 @@ permalink: /schedule/
 | Team Coates @ Ball Busters | Edgeworth Club       |
 | Cox Slashers @ Duncan's Donuts | Sewickley YMCA     |
 
-## Week 4
+## Thu, April 25th
 
 | Matchup | Location |
 |---------|----------|
@@ -36,7 +36,7 @@ permalink: /schedule/
 | Beaver Street Bullies @ Cox Slashers | Edgeworth Club       |
 | Ball Busters @ Team Sallard | Sewickley YMCA     |
 
-## Week 5
+## Thu, May 2nd
 
 | Matchup | Location |
 |---------|----------|
@@ -44,7 +44,7 @@ permalink: /schedule/
 | Team Sallard @ Cox Slashers | Edgeworth Club       |
 | Team Coates @ Duncan's Donuts | Sewickley YMCA     |
 
-## Week 6
+## Thu, May 9th
 
 | Matchup | Location |
 |---------|----------|
@@ -52,7 +52,7 @@ permalink: /schedule/
 | Duncan's Donuts @ Ball Busters | Edgeworth Club       |
 | Beaver Street Bullies @ Team Sallard | Sewickley YMCA     |
 
-## Week 7
+## Thu, May 16th
 
 | Matchup | Location |
 |---------|----------|
