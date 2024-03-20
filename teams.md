@@ -9,6 +9,10 @@ permalink: /teams/
 {% for team in teams %}
   <h2>
     {% case team %}
+      {% when 'Cox' %}
+        Cox Slashers
+      {% when 'Duncan' %}
+        Duncan's Donuts
       {% when 'Poluszejko' %}
         Beaver Street Bullies
       {% else %}
