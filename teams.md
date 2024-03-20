@@ -7,7 +7,14 @@ permalink: /teams/
 {% assign teams = "Stallard,Coates,Cox,Poluszejko,Duncan,Hay" | split: "," %}
 
 {% for team in teams %}
-  <h2>Team {{ team }}</h2>
+  <h2>
+    {% case team %}
+      {% when 'Poluszejko' %}
+        Beaver Street Bullies
+      {% else %}
+        Team {{ team }}
+    {% endcase %}
+  </h2>
   <table>
     <thead>
       <tr>
