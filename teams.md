@@ -9,6 +9,8 @@ permalink: /teams/
 {% for team in teams %}
   <h2>
     {% case team %}
+      {% when 'Coates' %}
+        Tri-Borough Deuces (TBD)
       {% when 'Cox' %}
         Cox Slashers
       {% when 'Duncan' %}
@@ -17,6 +19,8 @@ permalink: /teams/
         Ball Busters
       {% when 'Poluszejko' %}
         Beaver Street Bullies
+      {% when 'Stallard' %}
+        Party All The Time
       {% else %}
         Team {{ team }}
     {% endcase %}
