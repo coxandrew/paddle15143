@@ -10,13 +10,13 @@ permalink: /schedule/
 |---------|----------|
 | Cox Slashers @ Beaver Street Bullies | Allegheny Country Club      |
 | Party All The Time @ Ball Busters | Edgeworth Club       |
-| Tri-Borough Deuces (TBD) @ Duncan's Donuts | Sewickley YMCA     |
+| Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, April 11th
 
 | Matchup | Location |
 |---------|----------|
-| Ball Busters @ Tri-Borough Deuces (TBD) | Allegheny Country Club      |
+| Ball Busters @ Tri-Borough Deuces | Allegheny Country Club      |
 | Duncan's Donuts @ Cox Slashers | Edgeworth Club       |
 | Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
 
@@ -25,14 +25,14 @@ permalink: /schedule/
 | Matchup | Location |
 |---------|----------|
 | Party All The Time @ Beaver Street Bullies | Allegheny Country Club      |
-| Tri-Borough Deuces (TBD) @ Ball Busters | Edgeworth Club       |
+| Tri-Borough Deuces @ Ball Busters | Edgeworth Club       |
 | Cox Slashers @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, April 25th
 
 | Matchup | Location |
 |---------|----------|
-| Duncan's Donuts @ Tri-Borough Deuces (TBD) | Allegheny Country Club      |
+| Duncan's Donuts @ Tri-Borough Deuces | Allegheny Country Club      |
 | Beaver Street Bullies @ Cox Slashers | Edgeworth Club       |
 | Ball Busters @ Party All The Time | Sewickley YMCA     |
 
@@ -42,13 +42,13 @@ permalink: /schedule/
 |---------|----------|
 | Ball Busters @ Beaver Street Bullies | Allegheny Country Club      |
 | Party All The Time @ Cox Slashers | Edgeworth Club       |
-| Tri-Borough Deuces (TBD) @ Duncan's Donuts | Sewickley YMCA     |
+| Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, May 9th
 
 | Matchup | Location |
 |---------|----------|
-| Cox Slashers @ Tri-Borough Deuces (TBD) | Allegheny Country Club      |
+| Cox Slashers @ Tri-Borough Deuces | Allegheny Country Club      |
 | Duncan's Donuts @ Ball Busters | Edgeworth Club       |
 | Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
 
@@ -57,5 +57,5 @@ permalink: /schedule/
 | Matchup | Location |
 |---------|----------|
 | Duncan's Donuts @ Beaver Street Bullies | Allegheny Country Club      |
-| Tri-Borough Deuces (TBD) @ Cox Slashers | Edgeworth Club       |
+| Tri-Borough Deuces @ Cox Slashers | Edgeworth Club       |
 | Ball Busters @ Party All The Time | Sewickley YMCA     |

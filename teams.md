@@ -10,7 +10,7 @@ permalink: /teams/
   <h2>
     {% case team %}
       {% when 'Coates' %}
-        Tri-Borough Deuces (TBD)
+        Tri-Borough Deuces
       {% when 'Cox' %}
         Cox Slashers
       {% when 'Duncan' %}
