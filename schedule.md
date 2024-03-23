@@ -4,7 +4,7 @@ title: Schedule
 permalink: /schedule/
 ---
 
-## Thu, April 4th
+## Thu, April 4th @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
@@ -12,7 +12,7 @@ permalink: /schedule/
 | Party All The Time @ Haymakers | Edgeworth Club       |
 | Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
 
-## Thu, April 11th
+## Thu, April 11th @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
@@ -20,7 +20,7 @@ permalink: /schedule/
 | Duncan's Donuts @ Cox Slashers | Edgeworth Club       |
 | Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
 
-## Thu, April 18th
+## Thu, April 18th @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
@@ -28,7 +28,7 @@ permalink: /schedule/
 | Tri-Borough Deuces @ Haymakers | Edgeworth Club       |
 | Cox Slashers @ Duncan's Donuts | Sewickley YMCA     |
 
-## Thu, April 25th
+## Thu, April 25th @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
@@ -36,7 +36,7 @@ permalink: /schedule/
 | Beaver Street Bullies @ Cox Slashers | Edgeworth Club       |
 | Haymakers @ Party All The Time | Sewickley YMCA     |
 
-## Thu, May 2nd
+## Thu, May 2nd @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
@@ -44,7 +44,7 @@ permalink: /schedule/
 | Party All The Time @ Cox Slashers | Edgeworth Club       |
 | Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
 
-## Thu, May 9th
+## Thu, May 9th @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
@@ -52,7 +52,7 @@ permalink: /schedule/
 | Duncan's Donuts @ Haymakers | Edgeworth Club       |
 | Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
 
-## Thu, May 16th
+## Thu, May 16th @ 7:30pm
 
 | Matchup | Location |
 |---------|----------|
