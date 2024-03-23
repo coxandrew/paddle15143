@@ -10,13 +10,13 @@ permalink: /teams/
   <h2>
     {% case team %}
       {% when 'Coates' %}
-        Tri-Borough Deuces
+        Deez Nets
       {% when 'Cox' %}
         Cox Slashers
       {% when 'Duncan' %}
         Duncan's Donuts
       {% when 'Hay' %}
-        Ball Busters
+        Haymakers
       {% when 'Poluszejko' %}
         Beaver Street Bullies
       {% when 'Stallard' %}

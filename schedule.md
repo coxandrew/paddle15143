@@ -9,14 +9,14 @@ permalink: /schedule/
 | Matchup | Location |
 |---------|----------|
 | Cox Slashers @ Beaver Street Bullies | Allegheny Country Club      |
-| Party All The Time @ Ball Busters | Edgeworth Club       |
-| Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
+| Party All The Time @ Haymakers | Edgeworth Club       |
+| Deez Nets @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, April 11th
 
 | Matchup | Location |
 |---------|----------|
-| Ball Busters @ Tri-Borough Deuces | Allegheny Country Club      |
+| Haymakers @ Deez Nets | Allegheny Country Club      |
 | Duncan's Donuts @ Cox Slashers | Edgeworth Club       |
 | Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
 
@@ -25,31 +25,31 @@ permalink: /schedule/
 | Matchup | Location |
 |---------|----------|
 | Party All The Time @ Beaver Street Bullies | Allegheny Country Club      |
-| Tri-Borough Deuces @ Ball Busters | Edgeworth Club       |
+| Deez Nets @ Haymakers | Edgeworth Club       |
 | Cox Slashers @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, April 25th
 
 | Matchup | Location |
 |---------|----------|
-| Duncan's Donuts @ Tri-Borough Deuces | Allegheny Country Club      |
+| Duncan's Donuts @ Deez Nets | Allegheny Country Club      |
 | Beaver Street Bullies @ Cox Slashers | Edgeworth Club       |
-| Ball Busters @ Party All The Time | Sewickley YMCA     |
+| Haymakers @ Party All The Time | Sewickley YMCA     |
 
 ## Thu, May 2nd
 
 | Matchup | Location |
 |---------|----------|
-| Ball Busters @ Beaver Street Bullies | Allegheny Country Club      |
+| Haymakers @ Beaver Street Bullies | Allegheny Country Club      |
 | Party All The Time @ Cox Slashers | Edgeworth Club       |
-| Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
+| Deez Nets @ Duncan's Donuts | Sewickley YMCA     |
 
 ## Thu, May 9th
 
 | Matchup | Location |
 |---------|----------|
-| Cox Slashers @ Tri-Borough Deuces | Allegheny Country Club      |
-| Duncan's Donuts @ Ball Busters | Edgeworth Club       |
+| Cox Slashers @ Deez Nets | Allegheny Country Club      |
+| Duncan's Donuts @ Haymakers | Edgeworth Club       |
 | Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
 
 ## Thu, May 16th
@@ -57,5 +57,5 @@ permalink: /schedule/
 | Matchup | Location |
 |---------|----------|
 | Duncan's Donuts @ Beaver Street Bullies | Allegheny Country Club      |
-| Tri-Borough Deuces @ Cox Slashers | Edgeworth Club       |
-| Ball Busters @ Party All The Time | Sewickley YMCA     |
+| Deez Nets @ Cox Slashers | Edgeworth Club       |
+| Haymakers @ Party All The Time | Sewickley YMCA     |
