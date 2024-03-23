@@ -8,8 +8,6 @@ permalink: /about/
 
 Spring League 2024 is here! This year, we've expanded from 4 teams to 6 and held an official draft from the entire pool of players. This blended-team approach produces more balanced teams and promises competitive lines every week. It's going to rock.
 
-### Logistics
-
 | What      | How |
 | ----------- | ----------- |
 | **Dates**      | Thursdays from 4/4 - 5/23 (8 weeks)       |
