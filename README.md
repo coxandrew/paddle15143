@@ -20,6 +20,13 @@ permalink: /teams/
 Teams go here.
 ```
 
+## Customization
+
+To override the template pages, find the template from the theme's gem and copy + paste into the `_layouts` directory:
+```
+code $(bundle info --path minima)
+```
+
 ## Deployments
 
 * To deploy a new version, just push the `master` branch.

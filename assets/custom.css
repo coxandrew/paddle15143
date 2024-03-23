@@ -1,0 +1,48 @@
+.site-header {
+  background: #556A82;
+  border: 0;
+}
+.site-header a:link,
+.site-header a:visited,
+.site-header a:hover,
+.site-header a:active {
+  color: #fff;
+}
+.site-title {
+  background: url('/assets/img/logo.png') no-repeat 0 50%;
+  background-size: auto 60px;
+  text-indent: -9999px;
+  height: 80px;
+  width: 130px;
+}
+.site-nav .trigger,
+.site-nav .page-link {
+  height: 80px;
+}
+.site-nav .page-link {
+  display: inline-block;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .site-nav .trigger {
+    height: auto;
+  }
+  .site-header a:link,
+  .site-header a:visited,
+  .site-header a:hover,
+  .site-header a:active {
+    color: #000;
+  }
+  .site-nav .page-link {
+    display: block;
+    height: auto;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    top: 20px;
+  }
+}
