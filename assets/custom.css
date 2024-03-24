@@ -2,11 +2,16 @@
   background: #556A82;
   border: 0;
 }
-.site-header a:link,
-.site-header a:visited,
-.site-header a:hover,
-.site-header a:active {
+.site-nav {
+  font-size: 0;
+}
+.site-nav a:link,
+.site-nav a:visited,
+.site-nav a:hover,
+.site-nav a:active {
+  font-size: 1rem;
   color: #fff;
+  text-decoration: none;
 }
 .site-title {
   background: url('/assets/img/logo.png') no-repeat 0 50%;
@@ -22,6 +27,14 @@
 .site-nav .page-link {
   display: inline-block;
   line-height: 80px;
+  padding: 0 16px
+}
+.site-nav .page-link.active,
+.site-nav .page-link:hover {
+  background: #728ba7;
+}
+.site-nav .page-link:not(:last-child) {
+  margin: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -37,7 +50,11 @@
   .site-nav .page-link {
     display: block;
     height: auto;
-    line-height: 1.5;
+    line-height: 2.25;
+  }
+  .site-nav .page-link.active,
+  .site-nav .page-link:hover {
+    background: none;
   }
 }
 
