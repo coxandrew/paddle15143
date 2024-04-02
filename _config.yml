@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
+  - standings.md
   - schedule.md
   - teams.md
   - about.md
