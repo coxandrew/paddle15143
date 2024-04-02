@@ -9,7 +9,7 @@ permalink: /schedule/
 
 {% for week in schedule -%}
 {% assign week_date = start_date | plus: forloop.index0 | date: "%B %-d" -%}
-#### Week {{ week.name }} ({{ week_date }} @ 7:30pm)
+#### Week {{ week.name }} (Thu, {{ week_date }} @ 7:30pm)
 
 <table>
     <tr>
