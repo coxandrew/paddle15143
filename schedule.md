@@ -4,58 +4,27 @@ title: Schedule
 permalink: /schedule/
 ---
 
-#### Thu, April 4th @ 7:30pm
+{% assign schedule = site.data.schedule | group_by:"Week" -%}
+{% assign start_date = '2024-04-04' | date: "%s" %}
 
-| Matchup | Location |
-|---------|----------|
-| Cox Slashers @ Beaver Street Bullies | Allegheny Country Club      |
-| Party All The Time @ Haymakers | Edgeworth Club       |
-| Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
+{% for week in schedule -%}
+{% assign week_date = start_date | plus: forloop.index0 | date: "%B %-d" -%}
+#### Week {{ week.name }} ({{ week_date }} @ 7:30pm)
 
-#### Thu, April 11th @ 7:30pm
+<table>
+    <tr>
+        <th>Home</th>
+        <th>Away</th>
+        <th>Location</th>
+    </tr>
+{% for match in week.items -%}
+    <tr>
+        <td>{{ match.Home }}</td>
+        <td>{{ match.Away }}</td>
+        <td>{{ match.Location }}</td>
+    </tr>
+{% endfor -%}
+</table>
+{% assign start_date = start_date | plus: 604800 %}
 
-| Matchup | Location |
-|---------|----------|
-| Haymakers @ Tri-Borough Deuces | Allegheny Country Club      |
-| Duncan's Donuts @ Cox Slashers | Edgeworth Club       |
-| Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
-
-#### Thu, April 18th @ 7:30pm
-
-| Matchup | Location |
-|---------|----------|
-| Party All The Time @ Beaver Street Bullies | Allegheny Country Club      |
-| Tri-Borough Deuces @ Haymakers | Edgeworth Club       |
-| Cox Slashers @ Duncan's Donuts | Sewickley YMCA     |
-
-#### Thu, April 25th @ 7:30pm
-
-| Matchup | Location |
-|---------|----------|
-| Duncan's Donuts @ Tri-Borough Deuces | Allegheny Country Club      |
-| Beaver Street Bullies @ Cox Slashers | Edgeworth Club       |
-| Haymakers @ Party All The Time | Sewickley YMCA     |
-
-#### Thu, May 2nd @ 7:30pm
-
-| Matchup | Location |
-|---------|----------|
-| Haymakers @ Beaver Street Bullies | Allegheny Country Club      |
-| Party All The Time @ Cox Slashers | Edgeworth Club       |
-| Tri-Borough Deuces @ Duncan's Donuts | Sewickley YMCA     |
-
-#### Thu, May 9th @ 7:30pm
-
-| Matchup | Location |
-|---------|----------|
-| Cox Slashers @ Tri-Borough Deuces | Allegheny Country Club      |
-| Duncan's Donuts @ Haymakers | Edgeworth Club       |
-| Beaver Street Bullies @ Party All The Time | Sewickley YMCA     |
-
-#### Thu, May 16th @ 7:30pm
-
-| Matchup | Location |
-|---------|----------|
-| Duncan's Donuts @ Beaver Street Bullies | Allegheny Country Club      |
-| Tri-Borough Deuces @ Cox Slashers | Edgeworth Club       |
-| Haymakers @ Party All The Time | Sewickley YMCA     |
+{% endfor -%}
