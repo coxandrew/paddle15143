@@ -37,6 +37,12 @@
   margin: 0;
 }
 
+/* standings */
+.wins-losses,
+.percentage {
+  width: 2%;
+}
+
 @media screen and (max-width: 800px) {
   .site-nav .trigger {
     height: auto;
