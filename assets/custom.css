@@ -43,7 +43,19 @@
   width: 2%;
 }
 
+/* responsive */
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
   .site-nav .trigger {
     height: auto;
   }

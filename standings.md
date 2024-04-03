@@ -8,9 +8,18 @@ permalink: /standings/
   <thead>
     <tr>
       <th>Team</th>
-      <th>Wins</th>
-      <th>Losses</th>
-      <th>Percentage</th>
+      <th>
+        <div class="desktop">Wins</div>
+        <div class="mobile">Ws</div>
+      </th>
+      <th>
+        <div class="desktop">Losses</div>
+        <div class="mobile">Ls</div>
+      </th>
+      <th>
+        <div class="desktop">%&nbsp;Wins</div>
+        <div class="mobile">%</div>
+      </th>
     </tr>
   </thead>
 
