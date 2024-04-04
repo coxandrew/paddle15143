@@ -37,6 +37,10 @@
   margin: 0;
 }
 
+.home .post-meta {
+  margin: -1rem 0 1rem;
+}
+
 /* standings */
 .wins-losses,
 .percentage {
