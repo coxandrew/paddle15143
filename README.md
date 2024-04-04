@@ -20,6 +20,12 @@ permalink: /teams/
 Teams go here.
 ```
 
+### Create a new blog post
+
+```
+bundle exec jekyll post "Oh, did I forget to tell you?"
+```
+
 ## Customization
 
 To override the template pages, find the template from the theme's gem and copy + paste into the `_layouts` directory:
