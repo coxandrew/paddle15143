@@ -74,6 +74,13 @@
   .site-nav .page-link:hover {
     background: none;
   }
+
+  .schedule td {
+    font-size: 0.8rem;
+  }
+  .schedule .location {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (max-width: 600px) {

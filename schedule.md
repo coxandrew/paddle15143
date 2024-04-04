@@ -11,17 +11,21 @@ permalink: /schedule/
 {% assign week_date = start_date | plus: forloop.index0 | date: "%B %-d" -%}
 #### Week {{ week.name }} (Thu, {{ week_date }} @ 7:30pm)
 
-<table>
+<table class="schedule">
     <tr>
-        <th>Home</th>
-        <th>Away</th>
-        <th>Location</th>
+        <th>Matchup</th>
+        <th class="location">
+            <div class="desktop">Location</div>
+            <div class="mobile">@</div>
+        </th>
     </tr>
 {% for match in week.items -%}
     <tr>
-        <td>{{ match.Home }}</td>
-        <td>{{ match.Away }}</td>
-        <td>{{ match.Location }}</td>
+        <td>{{ match.Away }} @ {{ match.Home }}</td>
+        <td class="location">
+            <div class="desktop">{{ match.Location }}</div>
+            <div class="mobile">{{ match.Location | replace: 'Allegheny Country Club', 'ACC' | replace: 'Edgeworth Club', 'EC' | replace: 'Sewickley YMCA', 'YMCA' }}</div>
+        </td>
     </tr>
 {% endfor -%}
 </table>
