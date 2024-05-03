@@ -11,9 +11,9 @@ Week,Home,Home Sets,Away,Away Sets,Location
 4,Cox Slashers,6,Party All The Time,5,Edgeworth Club
 4,Tri-Borough Deuces,5,Beaver Street Bullies,6,Allegheny Country Club
 4,Duncan's Donuts,4,Haymakers,7,Sewickley YMCA
-5,Party All The Time,,Tri-Borough Deuces,,Sewickley YMCA
-5,Cox Slashers,,Haymakers,,Edgeworth Club
-5,Beaver Street Bullies,,Duncan's Donuts,,Allegheny Country Club
+5,Party All The Time,6,Tri-Borough Deuces,7,Sewickley YMCA
+5,Cox Slashers,2,Haymakers,6,Edgeworth Club
+5,Beaver Street Bullies,5,Duncan's Donuts,6,Allegheny Country Club
 6,Party All The Time,,Haymakers,,Sewickley YMCA
 6,Tri-Borough Deuces,,Duncan's Donuts,,Allegheny Country Club
 6,Cox Slashers,,Beaver Street Bullies,,Edgeworth Club
