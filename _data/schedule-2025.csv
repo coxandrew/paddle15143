@@ -1,0 +1,22 @@
+Week,Home,Home Sets,Away,Away Sets,Location
+1,ACC1,,EC1,,Allegheny Country Club
+1,EC2,,YMCA2,,Edgeworth Club
+1,YMCA1,,ACC2,,Sewickley YMCA
+2,ACC1,,EC2,,Allegheny Country Club
+2,EC1,,YMCA1,,Edgeworth Club
+2,YMCA2,,ACC2,,Sewickley YMCA
+3,ACC2,,EC2,,Allegheny Country Club
+3,EC1,,YMCA2,,Edgeworth Club
+3,YMCA1,,ACC1,,Sewickley YMCA
+4,ACC2,,EC1,,Allegheny Country Club
+4,EC2,,YMCA1,,Edgeworth Club
+4,YMCA2,,ACC1,,Sewickley YMCA
+5,ACC1,,ACC2,,Allegheny Country Club
+5,EC2,,EC1,,Edgeworth Club
+5,YMCA1,,YMCA2,,Sewickley YMCA
+6,EC1,,ACC1,,Edgeworth Club
+6,ACC2,,YMCA1,,Allegheny Country Club
+6,YMCA2,,EC2,,Sewickley YMCA
+7,EC2,,ACC2,,Edgeworth Club
+7,YMCA2,,EC1,,Sewickley YMCA
+7,ACC1,,YMCA1,,Allegheny Country Club
