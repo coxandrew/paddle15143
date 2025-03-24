@@ -1,22 +1,22 @@
 Week,Home,Home Sets,Away,Away Sets,Location
-1,ACC1,,EC1,,Allegheny Country Club
-1,EC2,,YMCA2,,Edgeworth Club
-1,YMCA1,,ACC2,,Sewickley YMCA
-2,ACC1,,EC2,,Allegheny Country Club
-2,EC1,,YMCA1,,Edgeworth Club
-2,YMCA2,,ACC2,,Sewickley YMCA
-3,ACC2,,EC2,,Allegheny Country Club
-3,EC1,,YMCA2,,Edgeworth Club
-3,YMCA1,,ACC1,,Sewickley YMCA
-4,ACC2,,EC1,,Allegheny Country Club
-4,EC2,,YMCA1,,Edgeworth Club
-4,YMCA2,,ACC1,,Sewickley YMCA
-5,ACC1,,ACC2,,Allegheny Country Club
-5,EC2,,EC1,,Edgeworth Club
-5,YMCA1,,YMCA2,,Sewickley YMCA
-6,EC1,,ACC1,,Edgeworth Club
-6,ACC2,,YMCA1,,Allegheny Country Club
-6,YMCA2,,EC2,,Sewickley YMCA
-7,EC2,,ACC2,,Edgeworth Club
-7,YMCA2,,EC1,,Sewickley YMCA
-7,ACC1,,YMCA1,,Allegheny Country Club
+1,Beaver Street Bullies,,Haymakers,,Allegheny Country Club
+1,Cox Slashers,,Party All The Time,,Edgeworth Club
+1,Duncan's Donuts,,Tri-Borough Deuces,,Sewickley YMCA
+2,Beaver Street Bullies,,Cox Slashers,,Allegheny Country Club
+2,Haymakers,,Duncan's Donuts,,Edgeworth Club
+2,Party All The Time,,Tri-Borough Deuces,,Sewickley YMCA
+3,Tri-Borough Deuces,,Cox Slashers,,Allegheny Country Club
+3,Haymakers,,Party All The Time,,Edgeworth Club
+3,Duncan's Donuts,,Beaver Street Bullies,,Sewickley YMCA
+4,Tri-Borough Deuces,,Haymakers,,Allegheny Country Club
+4,Cox Slashers,,Duncan's Donuts,,Edgeworth Club
+4,Party All The Time,,Beaver Street Bullies,,Sewickley YMCA
+5,Beaver Street Bullies,,Tri-Borough Deuces,,Allegheny Country Club
+5,Cox Slashers,,Haymakers,,Edgeworth Club
+5,Duncan's Donuts,,Party All The Time,,Sewickley YMCA
+6,Haymakers,,Beaver Street Bullies,,Edgeworth Club
+6,Tri-Borough Deuces,,Duncan's Donuts,,Allegheny Country Club
+6,Party All The Time,,Cox Slashers,,Sewickley YMCA
+7,Cox Slashers,,Tri-Borough Deuces,,Edgeworth Club
+7,Party All The Time,,Haymakers,,Sewickley YMCA
+7,Beaver Street Bullies,,Duncan's Donuts,,Allegheny Country Club
