@@ -20,7 +20,7 @@ permalink: /teams/
       {% when 'Poluszejko' %}
         Beaver Street Bullies
       {% when 'Stallard' %}
-        Only Trick Shots
+        Trick Shots Only
       {% else %}
         Team {{ team }}
     {% endcase %}
