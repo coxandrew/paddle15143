@@ -61,9 +61,11 @@ body_class: standings-page
     <thead>
       <tr>
         <th>Line</th>
-        <th>{{ away_team }}</th>
-        <th>{{ home_team }}</th>
-        <th>Score</th>
+        <th class="winner"></th>
+        <th>Team</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
       </tr>
     </thead>
     <tbody>
@@ -94,104 +96,60 @@ body_class: standings-page
             {% assign set3_tb_away = row.set3t %}
             {% assign set3_tb_home = next_row.set3t %}
 
-            {% assign score_text = "" %}
+            {% assign away_sets_won = 0 %}
+            {% assign home_sets_won = 0 %}
 
             {% if set1_away != "" and set1_home != "" %}
-              {% assign score_text = set1_away | append: "-" | append: set1_home %}
-              {% assign has_tb1 = false %}
-              {% if set1_tb_away and set1_tb_away != "" and set1_tb_away != nil %}
-                {% if set1_tb_home and set1_tb_home != "" and set1_tb_home != nil %}
-                  {% assign has_tb1 = true %}
-                {% endif %}
-              {% endif %}
-
-              {% if has_tb1 %}
-                {% assign score_text = score_text | append: " (" | append: set1_tb_away | append: "-" | append: set1_tb_home | append: ")" %}
+              {% if set1_away > set1_home %}
+                {% assign away_sets_won = away_sets_won | plus: 1 %}
+              {% else %}
+                {% assign home_sets_won = home_sets_won | plus: 1 %}
               {% endif %}
             {% endif %}
 
             {% if set2_away != "" and set2_home != "" %}
-              {% if score_text != "" %}
-                {% assign score_text = score_text | append: ", " %}
-              {% endif %}
-              {% assign score_text = score_text | append: set2_away | append: "-" | append: set2_home %}
-
-              {% assign has_tb2 = false %}
-              {% if set2_tb_away and set2_tb_away != "" and set2_tb_away != nil %}
-                {% if set2_tb_home and set2_tb_home != "" and set2_tb_home != nil %}
-                  {% assign has_tb2 = true %}
-                {% endif %}
-              {% endif %}
-
-              {% if has_tb2 %}
-                {% assign score_text = score_text | append: " (" | append: set2_tb_away | append: "-" | append: set2_tb_home | append: ")" %}
+              {% if set2_away > set2_home %}
+                {% assign away_sets_won = away_sets_won | plus: 1 %}
+              {% else %}
+                {% assign home_sets_won = home_sets_won | plus: 1 %}
               {% endif %}
             {% endif %}
 
-            {% comment %} Only add 3rd set if both away and home scores exist and aren't empty {% endcomment %}
-            {% if set3_away and set3_away != "" and set3_away != nil %}
-              {% if set3_home and set3_home != "" and set3_home != nil %}
-                {% if score_text != "" %}
-                  {% assign score_text = score_text | append: ", " %}
-                {% endif %}
-                {% assign score_text = score_text | append: set3_away | append: "-" | append: set3_home %}
-
-                {% assign has_tb3 = false %}
-                {% if set3_tb_away and set3_tb_away != "" and set3_tb_away != nil %}
-                  {% if set3_tb_home and set3_tb_home != "" and set3_tb_home != nil %}
-                    {% assign has_tb3 = true %}
-                  {% endif %}
-                {% endif %}
-
-                {% if has_tb3 %}
-                  {% assign score_text = score_text | append: " (" | append: set3_tb_away | append: "-" | append: set3_tb_home | append: ")" %}
-                {% endif %}
+            {% if set3_away != "" and set3_home != "" %}
+              {% if set3_away > set3_home %}
+                {% assign away_sets_won = away_sets_won | plus: 1 %}
+              {% else %}
+                {% assign home_sets_won = home_sets_won | plus: 1 %}
               {% endif %}
             {% endif %}
 
             {% if away_player1 != nil %}
               <tr>
-                <td>{{ line_num }}</td>
+                <td class="line" rowspan="2">{{ line_num }}</td>
                 <td>
-                  {% assign away_sets_won = 0 %}
-                  {% assign home_sets_won = 0 %}
-
-                  {% if set1_away != "" and set1_home != "" %}
-                    {% if set1_away > set1_home %}
-                      {% assign away_sets_won = away_sets_won | plus: 1 %}
-                    {% else %}
-                      {% assign home_sets_won = home_sets_won | plus: 1 %}
-                    {% endif %}
-                  {% endif %}
-
-                  {% if set2_away != "" and set2_home != "" %}
-                    {% if set2_away > set2_home %}
-                      {% assign away_sets_won = away_sets_won | plus: 1 %}
-                    {% else %}
-                      {% assign home_sets_won = home_sets_won | plus: 1 %}
-                    {% endif %}
-                  {% endif %}
-
-                  {% if set3_away != "" and set3_home != "" %}
-                    {% if set3_away > set3_home %}
-                      {% assign away_sets_won = away_sets_won | plus: 1 %}
-                    {% else %}
-                      {% assign home_sets_won = home_sets_won | plus: 1 %}
-                    {% endif %}
-                  {% endif %}
-
                   {% if away_sets_won > home_sets_won %}
                     <span class="inline-checkmark"></span>
                   {% endif %}
+                </td>
+                <td>
                   {{ away_player1 }} / {{ away_player2 }}
                 </td>
+                <td class="games">{{ set1_away }}{% if set1_tb_away and set1_tb_away != "" %} <sup>{{ set1_tb_away }}</sup>{% endif %}</td>
+                <td class="games">{{ set2_away }}{% if set2_tb_away and set2_tb_away != "" %} <sup>{{ set2_tb_away }}</sup>{% endif %}</td>
+                <td class="games">{{ set3_away }}{% if set3_tb_away and set3_tb_away != "" %} <sup>{{ set3_tb_away }}</sup>{% endif %}</td>
+              </tr>
+              <tr class="away">
                 <td>
                   {% if home_sets_won > away_sets_won %}
                     <span class="inline-checkmark"></span>
                   {% endif %}
+                </td>
+                <td>
                   {{ home_player1 }} / {{ home_player2 }}
                 </td>
-                <td>{{ score_text }}</td>
+                <td class="games">{{ set1_home }}{% if set1_tb_home and set1_tb_home != "" %} <sup>{{ set1_tb_home }}</sup>{% endif %}</td>
+                <td class="games">{{ set2_home }}{% if set2_tb_home and set2_tb_home != "" %} <sup>{{ set2_tb_home }}</sup>{% endif %}</td>
+                <td class="games">{{ set3_home }}{% if set3_tb_home and set3_tb_home != "" %} <sup>{{ set3_tb_home }}</sup>{% endif %}</td>
               </tr>
             {% endif %}
           {% endif %}

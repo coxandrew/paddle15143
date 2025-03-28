@@ -65,11 +65,29 @@
   font-size: 0.7em;
   line-height: 1;
 }
+.match-scores {
+  border: 2px solid #666;
+}
+.line {
+  text-align: center;
+  font-size: 1.5rem;
+  background: #ffffe6;
+}
+.winner {
+  width: 12px;
+}
+.games {
+  white-space: nowrap;
+  width: 20px;
+}
+.away {
+  border-bottom: 2px solid #666;
+}
 
 /* responsive */
 .standings-page .wrapper {
-  max-width: -webkit-calc(1200px -(30px* 2));
-  max-width: calc(1200px - 30px* 2);
+  /* max-width: -webkit-calc(1200px -(30px* 2));
+  max-width: calc(1200px - 30px* 2); */
 }
 .mobile {
   display: none;
@@ -110,6 +128,9 @@
   }
   .match-scores {
     font-size: 0.8rem;
+  }
+  .standings-page h3 {
+    font-size: 1.2rem;
   }
 }
 
