@@ -36,159 +36,136 @@ body_class: standings-page
   </tbody>
 </table>
 
-<h2>2025 Week 1 Results</h2>
+<h2>Matches</h2>
 
-{% assign matches = "" | split: "" %}
-{% assign current_match = "" | split: "" %}
+<div class="weekly-tabs">
+  <div class="tab-navigation">
+    <button class="tab-button active" onclick="showWeek(1)">Week 1</button>
+    <button class="tab-button" onclick="showWeek(2)">Week 2</button>
+    <button class="tab-button" onclick="showWeek(3)">Week 3</button>
+    <button class="tab-button" onclick="showWeek(4)">Week 4</button>
+    <button class="tab-button" onclick="showWeek(5)">Week 5</button>
+    <button class="tab-button" onclick="showWeek(6)">Week 6</button>
+    <button class="tab-button" onclick="showWeek(7)">Week 7</button>
+    <button class="tab-button" onclick="showWeek(8)">Week 8</button>
+  </div>
 
-{% for row in site.data.scores-2025-week-1 %}
-  {% if row.player2 contains "(AWAY)" %}
-    {% if current_match.size > 0 %}
-      {% assign matches = matches | push: current_match %}
-    {% endif %}
-    {% assign current_match = "" | split: "" %}
-  {% endif %}
+  <div id="week-1-content" class="week-content active">
+    {% include week_results.html week="1" %}
+  </div>
 
-  {% assign current_match = current_match | push: row %}
+  <div id="week-2-content" class="week-content">
+    {% include week_results.html week="2" %}
+  </div>
 
-  {% if forloop.last %}
-    {% assign matches = matches | push: current_match %}
-  {% endif %}
-{% endfor %}
+  <div id="week-3-content" class="week-content">
+    {% include week_results.html week="3" %}
+  </div>
 
-{% for match in matches %}
-  {% assign away_team = "" %}
-  {% assign home_team = "" %}
-  {% assign away_score = 0 %}
-  {% assign home_score = 0 %}
+  <div id="week-4-content" class="week-content">
+    {% include week_results.html week="4" %}
+  </div>
 
-  {% for row in match %}
-    {% if row.player2 contains "(AWAY)" %}
-      {% assign away_team = row.player1 %}
-      {% assign away_score = row.score %}
-    {% endif %}
-    {% if row.player2 contains "(HOME)" %}
-      {% assign home_team = row.player1 %}
-      {% assign home_score = row.score %}
-    {% endif %}
-  {% endfor %}
+  <div id="week-5-content" class="week-content">
+    {% include week_results.html week="5" %}
+  </div>
 
-  <h3>
-    {% if away_score > home_score %}
-      <span class="inline-checkmark"></span> {{ away_team }}
-    {% else %}
-      {{ away_team }}
-    {% endif %}
-    @
-    {% if home_score > away_score %}
-      <span class="inline-checkmark"></span> {{ home_team }}
-    {% else %}
-      {{ home_team }}
-    {% endif %}
-    ({{ away_score }} - {{ home_score }})
-  </h3>
+  <div id="week-6-content" class="week-content">
+    {% include week_results.html week="6" %}
+  </div>
 
-  <table class="match-scores">
-    <thead>
-      <tr>
-        <th>Line</th>
-        <th class="winner"></th>
-        <th>Team</th>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for row in match %}
-        {% if row.score contains "Line" and row.player1 != "" %}
-          {% assign line_num = row.score | remove: "Line " %}
-          {% assign away_player1 = row.player1 %}
-          {% assign away_player2 = row.player2 %}
+  <div id="week-7-content" class="week-content">
+    {% include week_results.html week="7" %}
+  </div>
 
-          {% assign next_index = forloop.index0 | plus: 1 %}
-          {% if next_index < match.size %}
-            {% assign next_row = match[next_index] %}
-            {% assign home_player1 = next_row.player1 %}
-            {% assign home_player2 = next_row.player2 %}
+  <div id="week-8-content" class="week-content">
+    {% include week_results.html week="8" %}
+  </div>
+</div>
 
-            {% assign set1_away = row.set1 %}
-            {% assign set1_home = next_row.set1 %}
-            {% assign set1_tb_away = row.set1t %}
-            {% assign set1_tb_home = next_row.set1t %}
+<script>
+  function showWeek(weekNum) {
+    // Hide all week content
+    const weekContents = document.querySelectorAll('.week-content');
+    weekContents.forEach(content => {
+      content.classList.remove('active');
+    });
 
-            {% assign set2_away = row.set2 %}
-            {% assign set2_home = next_row.set2 %}
-            {% assign set2_tb_away = row.set2t %}
-            {% assign set2_tb_home = next_row.set2t %}
+    // Show the selected week content
+    document.getElementById(`week-${weekNum}-content`).classList.add('active');
 
-            {% assign set3_away = row.set3 %}
-            {% assign set3_home = next_row.set3 %}
-            {% assign set3_tb_away = row.set3t %}
-            {% assign set3_tb_home = next_row.set3t %}
+    // Update active tab button
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach((button, index) => {
+      if (index === weekNum - 1) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+  }
 
-            {% assign away_sets_won = 0 %}
-            {% assign home_sets_won = 0 %}
+  // Find the latest week that has data (not showing "No results available yet")
+  function findLatestWeekWithData() {
+    // Start from the highest week (8) and go backwards
+    for (let week = 8; week >= 1; week--) {
+      const weekContent = document.getElementById(`week-${week}-content`);
+      if (weekContent &&
+          !weekContent.textContent.includes('No results available yet')) {
+        return week;
+      }
+    }
+    // Default to week 1 if no data is found
+    return 1;
+  }
 
-            {% if set1_away != "" and set1_home != "" %}
-              {% if set1_away > set1_home %}
-                {% assign away_sets_won = away_sets_won | plus: 1 %}
-              {% else %}
-                {% assign home_sets_won = home_sets_won | plus: 1 %}
-              {% endif %}
-            {% endif %}
+  // Initialize tab when page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    // Give the DOM a moment to fully render the content from includes
+    setTimeout(function() {
+      const latestWeek = findLatestWeekWithData();
+      showWeek(latestWeek);
+    }, 100);
+  });
+</script>
 
-            {% if set2_away != "" and set2_home != "" %}
-              {% if set2_away > set2_home %}
-                {% assign away_sets_won = away_sets_won | plus: 1 %}
-              {% else %}
-                {% assign home_sets_won = home_sets_won | plus: 1 %}
-              {% endif %}
-            {% endif %}
+<style>
+  .weekly-tabs {
+    margin: 20px 0;
+  }
 
-            {% if set3_away != "" and set3_home != "" %}
-              {% if set3_away > set3_home %}
-                {% assign away_sets_won = away_sets_won | plus: 1 %}
-              {% else %}
-                {% assign home_sets_won = home_sets_won | plus: 1 %}
-              {% endif %}
-            {% endif %}
+  .tab-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
 
-            {% if away_player1 != nil %}
-              <tr>
-                <td class="line" rowspan="2">{{ line_num }}</td>
-                <td>
-                  {% if away_sets_won > home_sets_won %}
-                    <span class="inline-checkmark"></span>
-                  {% endif %}
-                </td>
-                <td>
-                  {{ away_player1 }} / {{ away_player2 }}
-                </td>
-                <td class="games">{{ set1_away }}{% if set1_tb_away and set1_tb_away != "" %} <sup>{{ set1_tb_away }}</sup>{% endif %}</td>
-                <td class="games">{{ set2_away }}{% if set2_tb_away and set2_tb_away != "" %} <sup>{{ set2_tb_away }}</sup>{% endif %}</td>
-                <td class="games">{{ set3_away }}{% if set3_tb_away and set3_tb_away != "" %} <sup>{{ set3_tb_away }}</sup>{% endif %}</td>
-              </tr>
-              <tr class="away">
-                <td>
-                  {% if home_sets_won > away_sets_won %}
-                    <span class="inline-checkmark"></span>
-                  {% endif %}
-                </td>
-                <td>
-                  {{ home_player1 }} / {{ home_player2 }}
-                </td>
-                <td class="games">{{ set1_home }}{% if set1_tb_home and set1_tb_home != "" %} <sup>{{ set1_tb_home }}</sup>{% endif %}</td>
-                <td class="games">{{ set2_home }}{% if set2_tb_home and set2_tb_home != "" %} <sup>{{ set2_tb_home }}</sup>{% endif %}</td>
-                <td class="games">{{ set3_home }}{% if set3_tb_home and set3_tb_home != "" %} <sup>{{ set3_tb_home }}</sup>{% endif %}</td>
-              </tr>
-            {% endif %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </tbody>
-  </table>
-  <br>
-{% endfor %}
+  .tab-button {
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    margin-right: 2px;
+  }
 
-<p><a href="/standings-2024">2024 Standings</a></p>
+  .tab-button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .tab-button.active {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+  }
+
+  .week-content {
+    display: none;
+  }
+
+  .week-content.active {
+    display: block;
+  }
+</style>
