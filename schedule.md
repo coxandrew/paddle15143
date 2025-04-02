@@ -11,8 +11,8 @@ permalink: /schedule/
 {% assign week_offset = forloop.index0 | times: 604800 %}
 {% assign base_date = start_date | plus: week_offset %}
 {% if week.name == "5" %}
-{% assign week_date = base_date | minus: 86400 | date: "%B %-d" %}
-#### Week {{ week.name }} (Wed, {{ week_date }} @ 7:30pm)
+{% assign week_date = base_date | minus: 172800 | date: "%B %-d" %}
+#### Week {{ week.name }} (Tue, {{ week_date }} @ 7:30pm)
 {% else %}
 {% assign week_date = base_date | date: "%B %-d" %}
 #### Week {{ week.name }} (Thu, {{ week_date }} @ 7:30pm)
