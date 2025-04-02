@@ -127,10 +127,13 @@
     white-space: nowrap;
   }
   .match-scores {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .standings-page h3 {
     font-size: 1.2rem;
+  }
+  .post-content .match-header {
+    font-size: 0.9rem;
   }
 }
 
