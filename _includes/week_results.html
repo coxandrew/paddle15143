@@ -95,7 +95,7 @@
               {% if set1_away != "" and set1_home != "" %}
                 {% if set1_away > set1_home %}
                   {% assign away_sets_won = away_sets_won | plus: 1 %}
-                {% else %}
+                {% elsif set1_home > set1_away %}
                   {% assign home_sets_won = home_sets_won | plus: 1 %}
                 {% endif %}
               {% endif %}
@@ -103,7 +103,7 @@
               {% if set2_away != "" and set2_home != "" %}
                 {% if set2_away > set2_home %}
                   {% assign away_sets_won = away_sets_won | plus: 1 %}
-                {% else %}
+                {% elsif set2_home > set2_away %}
                   {% assign home_sets_won = home_sets_won | plus: 1 %}
                 {% endif %}
               {% endif %}
@@ -111,7 +111,7 @@
               {% if set3_away != "" and set3_home != "" %}
                 {% if set3_away > set3_home %}
                   {% assign away_sets_won = away_sets_won | plus: 1 %}
-                {% else %}
+                {% elsif set3_home > set3_away %}
                   {% assign home_sets_won = home_sets_won | plus: 1 %}
                 {% endif %}
               {% endif %}
