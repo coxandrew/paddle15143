@@ -4,23 +4,23 @@ title: Teams
 permalink: /teams/
 ---
 
-{% assign teams = "Stallard,Coates,Cox,Poluszejko,Jones,Hay" | split: "," %}
+{% assign teams = "Blint,Dundon,Stallard,Scrabis,Coggeshall,Means" | split: "," %}
 
 {% for team in teams %}
   <h2>
     {% case team %}
-      {% when 'Coates' %}
-        Tri-Borough Deuces
-      {% when 'Cox' %}
-        Cox Slashers
-      {% when 'Jones' %}
-        Duncan's Donuts
-      {% when 'Hay' %}
-        Haymakers
-      {% when 'Poluszejko' %}
-        Beaver Street Bullies
+      {% when 'Blint' %}
+        Blints Backscreen Big Lobs
+      {% when 'Dundon' %}
+        Sewickley Soft Hands
       {% when 'Stallard' %}
-        Trick Shots Only
+        Lemon Pound Cakes
+      {% when 'Scrabis' %}
+        Breakin' Ballz
+      {% when 'Coggeshall' %}
+        Steel City Strokers
+      {% when 'Means' %}
+        Sewickley Slashers
       {% else %}
         Team {{ team }}
     {% endcase %}
@@ -33,7 +33,7 @@ permalink: /teams/
       </tr>
     </thead>
     <tbody>
-      {% assign players = site.data.team-rosters-2025 | where: "Team", team %}
+      {% assign players = site.data.team-rosters-2026 | where: "Team", team %}
       {% for player in players %}
         <tr>
           {% if player.Captain %}

@@ -25,7 +25,7 @@ body_class: standings-page
   </thead>
 
   <tbody>
-    {% for team in site.data.standings-2025 %}
+    {% for team in site.data.standings-2026 %}
       <tr>
         <td class="team">{{ team.Team }}</td>
         <td class="wins-losses">{{ team.Wins }}</td>
