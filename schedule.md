@@ -29,24 +29,8 @@ permalink: /schedule/
 {% for match in week.items -%}
     <tr>
         <td>
-            {% case match.Away %}
-                {% when "Steel City Strokers" or "Sewickley Slashers" %}
-                    {% assign away_club = "ACC" %}
-                {% when "Blints Backscreen Big Lobs" or "Sewickley Soft Hands" %}
-                    {% assign away_club = "EC" %}
-                {% when "Lemon Pound Cakes" or "Breakin' Ballz" %}
-                    {% assign away_club = "YMCA" %}
-            {% endcase %}
-            {% case match.Home %}
-                {% when "Steel City Strokers" or "Sewickley Slashers" %}
-                    {% assign home_club = "ACC" %}
-                {% when "Blints Backscreen Big Lobs" or "Sewickley Soft Hands" %}
-                    {% assign home_club = "EC" %}
-                {% when "Lemon Pound Cakes" or "Breakin' Ballz" %}
-                    {% assign home_club = "YMCA" %}
-            {% endcase %}
-            {{ match.Away }} ({{ away_club }}){% if match["Away Sets"] %} <strong>({{ match["Away Sets"] }})</strong>{% endif %} @
-            {{ match.Home }} ({{ home_club }}){% if match["Home Sets"] %} <strong>({{ match["Home Sets"] }})</strong>{% endif %}
+            {{ match.Away }}{% if match["Away Sets"] %} <strong>({{ match["Away Sets"] }})</strong>{% endif %} @
+            {{ match.Home }}{% if match["Home Sets"] %} <strong>({{ match["Home Sets"] }})</strong>{% endif %}
         </td>
         <td class="location">
             <div class="desktop">{{ match.Location }}</div>
