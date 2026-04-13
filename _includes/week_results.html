@@ -27,11 +27,11 @@
     {% for row in match %}
       {% if row.player2 contains "(AWAY)" %}
         {% assign away_team = row.player1 %}
-        {% assign away_score = row.score %}
+        {% assign away_score = row.score | plus: 0 %}
       {% endif %}
       {% if row.player2 contains "(HOME)" %}
         {% assign home_team = row.player1 %}
-        {% assign home_score = row.score %}
+        {% assign home_score = row.score | plus: 0 %}
       {% endif %}
     {% endfor %}
 
